@@ -32,7 +32,7 @@ def chat():
   user_input = request.form["user_input"]
   file_input = request.form["file_input"]
 
-  # Creates a completion. The OpenAI model use for generating response is gpt-3.5-turbo. The role is set to user, and the content is 
+  # Creates a completion. The OpenAI model use for generating response is gpt-4-vision-preview. The role is set to user, and the content is 
   # user input. Provided text is from the user.
   response = client.chat.completions.create(messages= [{
       "role": "user",
