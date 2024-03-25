@@ -8,12 +8,11 @@ import os
 # Provides access to various aspects of the HTTP request, including: POST, GET, etc.
 from flask import Flask, render_template, request
 
-
 from openai import OpenAI
 import base64
 
 # Initializes a client object to interact with OpenAI's API. 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=os.environ.get('SECRET_KEY'))
 
 # Creates an instance of the Flask class and assigns it to the variable app. __name___ holds the name of the current module.
 app = Flask(__name__)
