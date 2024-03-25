@@ -1,0 +1,27 @@
+<!--Specifies document type. (HTML)-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chatbot</title>
+  <link rel="stylesheet" href='/static/styles/index.css' />
+</head>
+
+<body>
+  <h1>Chatbot</h1>
+  <!--action specifies that the form will submit data to the /chat path of the Flask application. method="POST" indicates that the POST
+  method will be used. name="user_input" allows for request.form["user_input"] to return user input.-->
+  <form action="/chat" method="POST">
+    <input type="text" name="user_input" placeholder="Enter your message">
+    <input type="text" name="file_input" placeholder="Enter web image url">
+    <!--Button for submission.-->
+    <button type="submit">Send</button>
+  </form>
+  <!--If we have user_input, return your input and the AI response.-->
+  {% if user_input %}
+  <p>You: {{ user_input }}</p>
+  <p>Chatbot: {{ ai_response }}</p>
+  {% endif %}
+</body>
+
+</html>

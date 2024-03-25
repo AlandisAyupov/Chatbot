@@ -1,0 +1,87 @@
+/* Set body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Style the chatbot container */
+.chatbot {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the chatbot header */
+.chatbot h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the message list */
+.messages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style each message */
+.message {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+/* Style user messages */
+.message.user {
+  justify-content: flex-end;
+}
+
+/* Style chatbot messages */
+.message.chatbot {
+  justify-content: flex-start;
+}
+
+/* Style the message content */
+.message p {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+/* Style user messages */
+.message.user p {
+  background-color: #ddd;
+}
+
+/* Style chatbot messages */
+.message.chatbot p {
+  background-color: #lightblue;
+}
+
+/* Style the input form */
+form {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Style the input field */
+form input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the submit button */
+form button[type="submit"] {
+  padding: 15px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
