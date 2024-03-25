@@ -19,7 +19,7 @@ body {
 .chatbot h1 {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 /* Style the message list */
@@ -59,7 +59,7 @@ body {
 
 /* Style chatbot messages */
 .message.chatbot p {
-  background-color: #lightblue;
+  background-color: lightblue;
 }
 
 /* Style the input form */
@@ -74,6 +74,7 @@ form input[type="text"] {
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  margin: 20px;
 }
 
 /* Style the submit button */
@@ -84,4 +85,5 @@ form button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 20px;
 }
